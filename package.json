@@ -1,0 +1,23 @@
+{
+  "name": "Music",
+  "version": "1.0.0",
+  "description": "一个移动端音乐播放器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CChenYixin/Music.git"
+  },
+  "keywords": [],
+  "author": {
+    "name":"chen yixin",
+    "email":"onepiececee@163.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CChenYixin/Music/issues"
+  },
+  "homepage": "https://github.com/CChenYixin/Music#readme"
+}
