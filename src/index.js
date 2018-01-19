@@ -1,6 +1,7 @@
 import 'normalize.css'
 import './style.less'
-import Slider from'./scripts/slider.js'
+import Slider from './scripts/slider.js'
+import Tab from './scripts/Tab.js'
 
 (function() {
 
@@ -19,7 +20,7 @@ import Slider from'./scripts/slider.js'
     let slider = new Slider(options)
     window.slider = slider
 
-
+    let tab = new Tab()
 
 
 
