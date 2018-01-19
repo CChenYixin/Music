@@ -1,2 +1,2 @@
-import './app.css';
-import './style.less';
+import 'normalize.css'
+import './style.less'
