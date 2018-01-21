@@ -2,6 +2,7 @@ class Tab {
     constructor(e) {
 
         document.addEventListener('click', function(e) {
+
             let target = e.target
             if ( target.dataset.role !== 'tab') return
 

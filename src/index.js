@@ -2,6 +2,7 @@ import 'normalize.css'
 import './style.less'
 import Slider from './scripts/slider.js'
 import Tab from './scripts/Tab.js'
+import lazyload from './scripts/Lazyload.js'
 
 (function() {
 
@@ -14,6 +15,7 @@ import Tab from './scripts/Tab.js'
         renderSlider(json.data.slider)
         renderRadio(json.data.radioList)
         renderSong(json.data.songList)
+        lazyload(document.querySelectorAll('.lazyload'))
     }
 
     function renderSlider(sliders){
@@ -34,7 +36,7 @@ import Tab from './scripts/Tab.js'
             <li class="radio-item">
                 <a href="">
                     <div class="item-image">
-                        <img src="${radio.picUrl}" alt="radio">
+                        <img class="lazyload" data-src="${radio.picUrl}" alt="radio">
                         <span class="icon"></span>
                     </div>
                     <div class="item-info">
@@ -52,7 +54,7 @@ import Tab from './scripts/Tab.js'
             <li class="hot-item">
             <a href="">
                 <div class="item-image">
-                    <img src="${song.picUrl}" alt="song">
+                    <img class="lazyload" data-src="${song.picUrl}" alt="song">
                     <span class="icon"></span>
                 </div>
                 <div class="item-info">
@@ -63,6 +65,6 @@ import Tab from './scripts/Tab.js'
         `).join('')
     }
 
-
+    let tab = new Tab()
 
 }())
