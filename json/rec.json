@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "slider": [
+      {
+        "linkUrl": "http://y.qq.com/m/act/sfhd/125.html?ADTAG=banner",
+        "picUrl":
+          "http://y.gtimg.cn/music/photo_new/T003R720x288M000001IwWxU2u4z5V.jpg",
+        "id": 14157
+      },
+      {
+        "linkUrl":
+          "https://c.y.qq.com/node/m/client/music_headline/index.html?_hidehd=1&_button=2&zid=545967",
+        "picUrl":
+          "http://y.gtimg.cn/music/photo_new/T003R720x288M000004Wbi5w0QuQx8.jpg",
+        "id": 13989
+      },
+      {
+        "linkUrl": "http://y.qq.com/w/album.html?albummid=004dxCIB3ZssZK",
+        "picUrl":
+          "http://y.gtimg.cn/music/photo_new/T003R720x288M00000448jY60mXZHh.jpg",
+        "id": 14170
+      },
+      {
+        "linkUrl":
+          "https://c.y.qq.com/node/m/client/music_headline/index.html?_hidehd=1&_button=2&zid=572977",
+        "picUrl":
+          "http://y.gtimg.cn/music/photo_new/T003R720x288M000003G90F41NxicI.jpg",
+        "id": 14153
+      },
+      {
+        "linkUrl": "http://y.qq.com/w/album.html?albummid=003z9kma13yhja",
+        "picUrl":
+          "http://y.gtimg.cn/music/photo_new/T003R720x288M000000tEhcB0vdCcC.jpg",
+        "id": 11621
+      }
+    ],
+    "radioList": [
+      {
+        "picUrl":
+          "http://y.gtimg.cn/music/photo/radio/track_radio_199_13_1.jpg",
+        "Ftitle": "热歌",
+        "radioid": 199
+      },
+      {
+        "picUrl":
+          "http://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg",
+        "Ftitle": "一人一首招牌歌",
+        "radioid": 307
+      }
+    ],
+    "songList": [
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/J64RvyhQtdjd9bWzGSbsoOgQibZ1VpGHcpo5E2RTZF789YC6z8kayEw/300?n=1",
+        "songListDesc": "寄托在城市民谣里的孤独灵魂",
+        "radioid": 199
+      },
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/eO9YLkEHAnz3gntq1uUDL0PlJvJ58tbZqZ2ps7Bdt0xD8TweQa3N5w/300?n=1",
+        "songListDesc": "酥到心里的韩风对唱表白歌",
+        "radioid": 307
+      },
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/JBDCVgqXWXaYUvcsElqcicVAcuw0NmzNDZohbZiblkJt6Jtunbe0g0ew/300?n=1",
+        "songListDesc": "盛世美音中的真性情",
+        "radioid": 307
+      },
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/yKcnCuBib3ocLM3KDVibWhKVf0JouWDh4YsVhwIZibtH5sWN8DrlkFkZA/300?n=1",
+        "songListDesc": "小茶馆老板煮茶时的安逸民谣",
+        "radioid": 307
+      },
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/Ay2w92PeiaO57pZWMwecv6SEWibhUAoWKzkmWgbtcfCsibQYt8bZtq2PA/300?n=1",
+        "songListDesc": "寒假赖床指南:吸猫！吸猫！吸猫！",
+        "radioid": 307
+      },
+      {
+        "picUrl":
+          "https://p.qpic.cn/music_cover/V34Wl85ZuJRskg3Ds3R8yyddp8gI2icb7wXicN8ZEzJZP0icnwHyzNzhQ/300?n=1",
+        "songListDesc": "超级碗中场秀嘉宾歌曲集",
+        "radioid": 307
+      }
+    ]
+  }
+}
