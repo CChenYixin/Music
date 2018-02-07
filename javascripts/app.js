@@ -19,6 +19,7 @@
   }
 
   let search = new Search(document.querySelector('#search-view'))
+  let player = new MusicPlayer(document.querySelector('#player'))
 
 
   function renderSlider(slides){
@@ -84,5 +85,7 @@
       </li>`).join('')
   }
 
+  window.search = search
+  window.player = player
 
 })()
