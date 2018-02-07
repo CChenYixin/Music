@@ -18,6 +18,9 @@
     lazyload()
   }
 
+  let search = new Search(document.querySelector('#search-view'))
+
+
   function renderSlider(slides){
     slides = slides.map(slide => {
       return { link : slide.linkUrl, image: slide.picUrl }
