@@ -15,3 +15,4 @@ export function albumCoverUrl(id) {
 export function searchUrl(keyword, page = 1) {
   return `${SEARCH_URL}?keyword=${keyword}&page=${page}`
 }
+

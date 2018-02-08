@@ -3,7 +3,6 @@ export function lazyload(images){
   let imgs = [].slice.call(images || document.querySelectorAll('.lazyload'))
 
   let onscroll = throttle(function(){
-    console.log(Date.now())
     if (imgs.length === 0) {
       return window.removeEventListener('scroll',onscroll)
     }

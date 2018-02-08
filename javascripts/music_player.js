@@ -2,26 +2,17 @@ import { ProgressBar } from './progress_bar.js'
 import { LyricsPlayer } from './lyrics_player.js'
 import { songUrl, lyricsUrl, albumCoverUrl } from './helpers.js'
 
-
-export class MusicPlayer{
-  constructor(el){
+export class MusicPlayer {
+  constructor(el) {
     this.$el = el
-    this.$el.addEventListener('click',this)
+    this.$el.addEventListener('click', this)
     this.$audio = this.createAudio()
-
-
-    this.progress = new ProgressBar(this.$el.querySelector('.progress'),this.$audio)
-    this.lyrics = new LyricsPlayer(this.$el.querySelector('.player-lyrics'))
-
+    this.lyrics = new LyricsPlayer(this.$el.querySelector('.player-lyrics'), this.$audio)
+    this.progress = new ProgressBar(this.$el.querySelector('.progress'))
     this.fetching = false
   }
 
-
-
-
-  // 创建
-
-  createAudio(){
+  createAudio() {
     let audio = document.createElement('audio')
     audio.id = `player-${Math.floor(Math.random() * 100)}-${+new Date()}`
     audio.addEventListener('ended', () => {
@@ -33,12 +24,9 @@ export class MusicPlayer{
     return audio
   }
 
-  // 监听
-
-  handleEvent(event){
+  handleEvent(event) {
     let target = event.target
-
-    switch(true){
+    switch (true) {
       case target.matches('.icon-play'):
         this.onPlay(event)
         break
@@ -49,8 +37,6 @@ export class MusicPlayer{
         this.hide()
         break
     }
-
-
   }
 
   onPlay(event) {
@@ -72,7 +58,7 @@ export class MusicPlayer{
 
   play(options = {}) {
     if (!options) return
-    
+    console.log(options)
     this.$el.querySelector('.song-name').innerText = options.songname
     this.$el.querySelector('.song-artist').innerText = options.artist
     this.progress.reset(options.duration)
@@ -100,20 +86,13 @@ export class MusicPlayer{
     this.show()
   }
 
-  show(){
+  show() {
     this.$el.classList.add('show')
     document.body.classList.add('noscroll')
   }
 
-  hide(){
+  hide() {
     this.$el.classList.remove('show')
     document.body.classList.remove('noscroll')
   }
-
-
-
-
-
-
-
 }
