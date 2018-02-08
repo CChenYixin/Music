@@ -1,4 +1,6 @@
-class Search {
+import { searchUrl } from './helpers.js'
+
+export class Search {
   constructor(el) {
     this.$el = el
     this.keyword = ''
@@ -47,7 +49,7 @@ class Search {
     if(this.fetching) return 
     this.keyword = keyword
     this.fetching = true
-    fetch(`http://localhost:4000/search?keyword=${this.keyword}&page=${ page || this.page}`)
+    fetch(searchUrl(this.keyword, page || this.page))
       .then(res => res.json())
       .then(json => {
         this.page = json.data.song.curpage
@@ -84,11 +86,5 @@ class Search {
     this.nomore = false
     this.$songs.innerHTML = ''
   }
-
-
-
-
-
-
 
 }

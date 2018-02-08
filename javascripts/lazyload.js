@@ -1,4 +1,4 @@
-function lazyload(images){
+export function lazyload(images){
 
   let imgs = [].slice.call(images || document.querySelectorAll('.lazyload'))
 

@@ -1,4 +1,4 @@
-class ProgressBar {
+export class ProgressBar {
   constructor(el,duration,start){
     this.$el = el
     this.elapsed = 0
@@ -25,6 +25,8 @@ class ProgressBar {
     clearInterval(this.intervalId)
   }
   
+  // 更新
+
   update(){
     this.elapsed += 0.05
     if (this.elapsed >= this.duration) this.reset()
@@ -32,6 +34,8 @@ class ProgressBar {
     this.$progress.style.transform = `translate(${this.progress * 100 - 100}%)`
     this.$elapsed.innerText = this.formatTime(this.elapsed)
   }
+
+  // 重置
 
   reset(duration) {
     this.pause()
@@ -45,6 +49,7 @@ class ProgressBar {
     }
   }
 
+
   render(){
     this.$el.innerHTML = `
       <div class="progress-time progress-elapsed"></div>
@@ -54,6 +59,8 @@ class ProgressBar {
       <div class="progress-time progress-duration"></div>
     `
   }
+
+  // 时间
 
   formatTime(seconds) {
     let mins = Math.floor(seconds / 60)
